@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(23, 155, 197);
+}
+
+
+.titulo_PrincipalDis{
+    max-width: 1111px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 1px 25px 2px;
+    border-radius: 0px;
+    margin-top: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.ContenedorOperaciones{
+    max-width: 1100px;
+    width: 100%;
+    background: rgb(23, 155, 197);
+    margin: auto;
+    padding: 25px 20px 15px;
+    border-radius: 0px;
+    margin-top: 0;
+}
+
+.ContenedorOperaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operacion{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorBtn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 239, 245);
+}
+
+.resultado{
+    margin: auto;
+    max-width: 1110px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 20px 20px 90px;
+    background: rgb(255, 255, 255);
+}

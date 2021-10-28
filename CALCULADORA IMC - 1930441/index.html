@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora IMC UPV</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<html>
+  <head>
+    <title>Calculadora Índice de Masa Corporal</title>
+  </head>
+  <body>
+    <img width="300" src="imc.jpeg">
+    <form id="formulario" onsubmit="calcularIMC(); return false">
+      <label for="nombre">Ingresa tu NOMBRE:</label>
+      <input type="text" id="nombre">
+      <br>
+      <label for="altura">Ingresa tu ALTURA actual (cm):</label>
+      <input type="text" id="altura" required="required">
+      <br>
+      <label for="peso">Ingresa tu PESO actual (kg):</label>
+      <input type="text" id="peso" required="required">
+      <br>
+      <button type="submit">Calcular tu IMC</button>
+      <p id="resultado"></p>
+    </form>
+  </body>
+</html>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

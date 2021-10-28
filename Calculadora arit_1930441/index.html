@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>2.5 Calculadora artimetica</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="ig" style="font-size: 45px;"></div>
+
+<center>
+  <div class="corpo-calc">    
+        <input type="text" class="visor" id="visor" readonly="true">
+    
+        <input type="button" class="btn" value="C" onclick="limpar()">
+        <input type="button" class="btn" value="(" onclick="preencher('(');">
+        <input type="button" class="btn" value=")" onclick="preencher(')');">
+        <input type="button" class="btn" value="←" onclick="excluir();">
+        <input type="button" class="btn" value="x" onclick="preencher('x');">
+    
+        <input type="button" class="btn-span" value="%" onclick="percent();">
+     
+        <input type="button" class="btn" value="7" onclick="preencher(7);">
+        <input type="button" class="btn" value="8" onclick="preencher(8);">
+        <input type="button" class="btn" value="9" onclick="preencher(9);">
+        <input type="button" class="btn" value="÷" onclick="preencher('÷');">
+    
+        <input type="button" class="btn" value="4" onclick="preencher(4);">
+        <input type="button" class="btn" value="5" onclick="preencher(5);">
+        <input type="button" class="btn" value="6" onclick="preencher(6);">
+        <input type="button" class="btn" value="-" onclick="preencher('-');">
+    
+        <input type="button" class="btn-span" value="√" onclick="razQ();">
+    
+        <input type="button" class="btn" value="1" onclick="preencher(1);">
+        <input type="button" class="btn" value="2" onclick="preencher(2);">
+        <input type="button" class="btn" value="3" onclick="preencher(3);">
+        <input type="button" class="btn-span" value="+" onclick="preencher('+');">
+    
+        <input type="button" class="btn" value="0" onclick="preencher(0);">
+        <input type="button" class="btn" value="." onclick="preencher('.');">
+        <input type="button" class="btn" value="=" onclick="calcular();">
+    </div>
+</center>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

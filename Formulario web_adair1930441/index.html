@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="contenedor">
+    <h1>Survey for Product X</h1>
+    <form method="POST" action="http://www.informaticasaladillo.es/mostrar.php" id="formulario">
+             <legend>Tu correo se registrara cuando envies este formulario</legend>
+            <div>
+            <legend> No es tuya la direccion 1930441@upv.edu.mx? Cambiar de cuenta</legend> <br>
+      <!-- Lista de campos -->
+      <ul>
+        <li class="fila">
+          <!-- text -->
+          <input type="text" id="nombre" name="fullname" maxlength="30" size="30" placeholder="(nombre)" required="required" autofocus="autofocus" />
+          <label for="nombre" class="propiedad">Nombre</label>
+        <!--hidden -->
+        <input type="hidden" id="codigo" name="code" value="25" />
+        </li>
+        <!-- password -->
+        <li class="fila">
+     
+          <p>What car do you prefer : <br>
+  <input type="radio" name="hm" value="h" required> Sedan
+  <center> <img src="sedan.jpg"> </center>
+  <input type="radio" name="hm" value="h" required> SUV
+  <center> <img src="Vehiculo SUV.png"> </center><br>
+  <input type="radio" name="hm" value="h" required> Mini car
+  <center> <img src="minicar.jpg"> </center><br>
+
+</p>
+        </li>
+
+        <!-- email -->
+        <li class="fila">
+          <input type="email" id="email" name="email" maxlength="30" size="30" placeholder="(Otro)" />
+          <label for="email" class="propiedad">What's type of devides de you hace at home? :</label>
+        </li>
+        <input type="radio" name="boton" value="1">Tablet<br>
+        <input type="radio" name="boton" value="2">Smartphone<br>
+        <input type="radio" name="boton" value="3">PC<br>
+        <input type="radio" name="boton" value="2">Laptop<br>
+        <!-- tel -->
+        <li class="fila">
+          <input type="tel" id="telefono" name="phonenumber" maxlength="9" size="11" placeholder="(Otro)" pattern="[0-9]{9}" />
+          <label for="telefono" class="propiedad">¿Que carrera estudias?</label>
+        </li>
+        <select name="menu">
+  <option value="0">Elige</option>
+  <option value="1">ITI</option>
+  <option value="2">ISA</option>
+  <option value="3">LAYGE</option>
+  <option value="3">MECA</option>
+  <option value="3">MANU</option>
+</select><br>
+<br>
+<p>Escribe tus comentarios:<br>
+  <input type="text" name="Name" size="40" placeholder="Tu respuesta aqui">
+</p><br>
+
+<p>Indique su nivel de Ingles (Malo, Regular, Bueno):<br>
+<input type="range" name="rango"
+  min="1" max="3" list="lista-rango">
+<datalist id="lista-rango">
+  <option value="1" label="Malo">
+  <option value="2" label="Regular">
+  <option value="3" label="Bueno">
+</datalist>
+</p><br>
+<p>Danos tu opinion (Malo, Regular, Bueno, Excelente):<br>
+ Room Service:<br>
+<input type="range" name="rango"
+  min="1" max="4" list="lista-rango">
+<datalist id="lista-rango">
+  <option value="1" label="Malo">
+  <option value="2" label="Regular">
+  <option value="3" label="Bueno">
+  <option value="4" label="Excelente">
+</datalist>
+</p>
+ <p>Servicio de reservacion:<br>
+<input type="range" name="rango"
+  min="1" max="4" list="lista-rango">
+<datalist id="lista-rango">
+  <option value="1" label="Malo">
+  <option value="2" label="Regular">
+  <option value="3" label="Bueno">
+  <option value="4" label="Excelente">
+</datalist>
+</p>
+ <p>Restaurante:<br>
+<input type="range" name="rango"
+  min="1" max="4" list="lista-rango">
+<datalist id="lista-rango">
+  <option value="1" label="Malo">
+  <option value="2" label="Regular">
+  <option value="3" label="Bueno">
+  <option value="4" label="Excelente">
+</datalist>
+</p><br>
+<li class="fila">
+          <input type="date" id="fecha" name="birthdate" />
+          <label for="fecha" class="propiedad">Fecha de nacimiento</label>
+        </li>
+        <!-- url -->
+        
+        <!-- readonly disabled -->
+       <li class="fila">
+          <input type="number" id="hermanos" name="siblings" class="small" min="1" max="50" value="1" />
+          <label for="hermanos" class="propiedad">Edad</label>
+        </li>
+        <!-- number -->
+        <li class="fila">
+          <input type="number" id="hermanos" name="siblings" class="small" min="1" max="50" value="1" />
+          <label for="hermanos" class="propiedad">Nº de hermanos</label>
+        </li>
+        <!-- range -->
+        
+        <!-- color -->
+        <li class="fila">
+          <input type="color" id="color" value="#FF0000" onchange="document.querySelector('#color-output').value = value;" />
+          <label for="color" class="propiedad">Color preferido</label>
+          <output for="color" id="color-output">#FF0000</output>
+        </li>
+        <!-- checkbox -->
+       
+        <!-- radio -->
+        <li class="fila">
+          <input type="radio" id="hombre" name="genre" value="hombre" />
+          <label for="hombre" class="de-radio">Hombre</label>
+          <input type="radio" id="mujer" name="genre" value="mujer" checked="checked" />
+          <label for="mujer" class="de-radio">Mujer</label>
+          <label for="genero" class="propiedad">Género</label>
+        </li><br>
+
+        <p>
+  <input type="radio" name="hm" value="h" required> Enviarme una copia con mis respuestas
+ 
+</p>
+     
+      
+        
+        <!-- Botonera -->
+        <li class="fila botonera">
+          <button type="submit">Aceptar</button>
+          <button type="reset">Reiniciar</button>   
+        </li><br>
+        <center>Nunca envies contrasenas a traves de Formularios de Google.</center> <br>
+<center>Este formulario se creo en Universidad Politecnica de Victoria. Notificar uso inadecuado
+</center>
+      </ul>
+    </form>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>

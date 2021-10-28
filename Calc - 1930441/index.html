@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora Básica</title>
+</head>
+<body>
+    <script src="operaciones.js"></script>
+    
+    <header class="titulo_PrincipalDis">
+        <h1>Calculadora de Operaciones Básicas</h1>
+    </header>
+
+    <div class="ContenedorOperaciones">
+            <div class="operacion">
+                <button onclick="btnCalcu('sum');" class="colorBtn">OPERACIÓN SUMA</button>
+            </div>
+            <div onclick="btnCalcu('resta');" class="operacion">
+                <button class="colorBtn">OPERACIÓN RESTA</button>
+            </div>
+            <div onclick="btnCalcu('multi');" class="operacion">
+                <button class="colorBtn">OPERACIÓN MULTIPLICACIÓN</button>
+            </div>
+            <div onclick="btnCalcu('div');" class="operacion">
+                <button class="colorBtn">OPERACIÓN DIVISIÓN</button>
+            </div>
+            <div onclick="btnCalcu('prom');" class="operacion">
+                <button class="colorBtn">OPERACIÓN PROMEDIO</button>
+            </div>
+            <div onclick="btnCalcu('devia');" class="operacion">
+                <button class="colorBtn">OPERACIÓN DESVIACION ESTANDAR</button>
+            </div>
+    <br>
+    <br>
+    <br>
+        <div id="sum" class="resultado" hidden>
+            <label for="numUno"> Ingresar el número 1: </label>
+            <input type="number" name="numUno" id="sum_numUno">
+            <br>
+            <br>
+            <label for="numDos"> Ingresar el número 2: </label>
+            <input type="number" name="numDos" id="sum_numDos">
+            <br>
+            <br>
+            <button onclick="suma_obtener();">Sumar</button>
+            <br>
+            <br>
+            <h1 id="sum_result"></h1>
+        </div>
+    
+        
+        <div id="resta" class="resultado" hidden>
+            <label for="numUno">Ingresar el número 1:</label>
+            <input type="number" name="numUno" id="resta_numUno">
+            <br>
+            <br>
+            <label for="numDos"> Ingresar el número 2: </label>
+            <input type="number" name="numDos" id="resta_numDos">
+            <br>
+            <br>
+            <button onclick="resta_obtener();">Restar </button>
+            <br>
+            <br>
+            <h1 id="resta_result"></h1>
+        </div>
+    
+        
+        <div id="multi" class="resultado" hidden>
+            <label for="numUno"> Ingresar el número 1: </label>
+            <input type="number" name="numUno" id="multi_numUno">
+            <br>
+            <br>
+            <label for="numDos"> Ingresar el número 2: </label>
+            <input type="number" name="numDos" id="multi_numDos">
+            <br>
+            <br>
+            <button onclick="multiplicacion_obtener();">Multiplicar </button>
+            <br>
+            <br>
+            <h1 id="multi_result"></h1>
+        </div>
+    
+        
+        <div id="div" class="resultado" hidden>
+            <label for="numUno"> Ingresar el número 1: </label>
+            <input type="number" name="numUno" id="div_numUno">
+            <br>
+            <br>
+            <label for="numDos"> Ingresar el número 2: </label>
+            <input type="number" name="numDos" id="div_numDos">
+            <br>
+            <br>
+            <button onclick="division_obtener();">Dividir </button>
+            <br>
+            <br>
+            <h1 id="div_result"></h1>
+        </div>
+    
+        
+        <div id="prom" class="resultado" hidden>
+            <label for="numUno">Cantidad a calcular: </label>
+            <input type="number" name="numUno" id="prom_numUno">
+            <br>
+            <br>
+            <button onclick="promedio_obtener();">Promediar: </button>
+            <br>
+            <br>
+            <h1 id="prom_result"></h1>
+        </div>
+    
+        <div id="devia" class="resultado" hidden>
+            <label for="numUno"> Cantidad a calcular: </label>
+            <input type="number" name="numUno" id="devia_numUno">
+            <br>
+            <br>
+            <button onclick="desviacion_obtener();">Obtener resultado: </button>
+            <br>
+            <h1 id="devia_result"></h1>
+        </div>
+
+    </div>
+</body>
+</html>
